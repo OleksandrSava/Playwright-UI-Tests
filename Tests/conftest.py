@@ -8,6 +8,7 @@ async def page(request):
         browser = await p.chromium.launch(
             headless=False,
             args=[
+                "--headless=new",
                 "--no-sandbox",
                 "--disable-blink-features=AutomationControlled",
                 "--start-maximized",
