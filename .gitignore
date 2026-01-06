@@ -1,0 +1,68 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ======================
+# Virtual environments
+# ======================
+.venv/
+venv/
+env/
+
+# ======================
+# Environment variables
+# ======================
+.env
+.env.*
+
+# ======================
+# Pytest / cache
+# ======================
+.pytest_cache/
+.cache/
+pytest.ini
+
+# ======================
+# Logs
+# ======================
+*.log
+
+# ======================
+# Coverage / reports
+# ======================
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+*.cov
+*.gcov
+
+# ======================
+# Allure
+# ======================
+allure-results/
+allure-report/
+
+# ======================
+# IDEs
+# ======================
+.idea/
+.vscode/
+*.iml
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Other
+# ======================
+*.pid
+*.seed
+*.pid.lock
+
