@@ -54,9 +54,6 @@ class ProductsPage(BasePage):
 
     @allure.step('Find all product prices')
     async def return_all_product_prices(self):
-        # all_locators = self.page.locator(self.Locators.PRODUCTS_PRICE).all()
-        # all_prices = [float(el.innet_text.replace('$', '').strip()) for el in all_locators]
-        # return all_prices
 
         locator = self.page.locator(self.Locators.PRODUCTS_PRICE)
         texts = await locator.all_text_contents()  # -> list[str], напр. ["$15.99", "$9.50", ...]

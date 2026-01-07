@@ -32,4 +32,3 @@ class TestCheckout(BaseTest):
         else:
             error = await self.checkout_step_1_page.get_error_box_text()
             assert error is not None, "Expected error message, but none was displayed"
-            # await allure.attach(error, "Error message")

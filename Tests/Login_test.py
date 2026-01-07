@@ -36,4 +36,3 @@ class TestLogin(BaseTest):
         else:
             error = await self.login_page.get_error_message_text()
             assert error is not None, "Expected error message, but none was displayed"
-            # await allure.attach(error, "Error message")
