@@ -23,7 +23,6 @@ env/
 # ======================
 .pytest_cache/
 .cache/
-pytest.ini
 
 # ======================
 # Logs
