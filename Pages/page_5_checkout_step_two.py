@@ -6,11 +6,10 @@ class CheckoutStepTwoPage(BasePage):
 
     PAGE_URL = Links.checkout_2nd
 
-    class Locators:
-        FINISH_BUTTON = "data-test=finish"
+    FINISH_BUTTON = "data-test=finish"
 
     @allure.step('Click on finish button')
     async def click_finish_button(self):
-        finish = self.page.locator(self.Locators.FINISH_BUTTON)
+        finish = self.page.locator(self.FINISH_BUTTON)
         await self.expect(finish).to_be_enabled()
         await finish.click()

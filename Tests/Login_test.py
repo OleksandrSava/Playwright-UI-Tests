@@ -28,7 +28,6 @@ class TestLogin(BaseTest):
 
         await self.login_page.enter_login(login)
         await self.login_page.enter_password(password)
-
         await self.login_page.click_submit()
 
         if status:

@@ -6,12 +6,11 @@ class CheckoutCompletePage(BasePage):
 
     PAGE_URL = Links.checkout_complete
 
-    class Locators:
-        BACK_BUTTON = "data-test=back-to-products"
+    BACK_BUTTON = "data-test=back-to-products"
 
     @allure.step('Click back button')
     async def click_back_button(self):
-        back = self.page.locator(self.Locators.BACK_BUTTON)
+        back = self.page.locator(self.BACK_BUTTON)
         await self.expect(back).to_be_enabled()
         await back.click()
 
